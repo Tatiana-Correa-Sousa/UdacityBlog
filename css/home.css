@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#grid-wrapper {
+    display: grid;
+    gap: 15px;
+    grid-template-areas: 
+    "header"
+    "dtpr"
+    "dtsec"
+    "ultimos"
+    "subscribe"
+    "best"
+    "other"
+    "contato"
+    "footer";
+}
+
+#main-menu {
+    grid-area: header;
+    height: 80px;
+}
+
+#destaq-prin {
+    grid-area: dtpr;
+    height: 300px;
+}
+
+.container-wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+#destaq-sec {
+    grid-area: dtsec;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.destaq-sec-item{
+    height: 170px;
+}
+
+.ultimos-posts {
+    grid-area: ultimos;
+}
+
+.padrao-posts {
+    height: 500px;
+    padding: 10px 0px;
+}
+
+.titulo-section {
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.flex-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 435px;
+}
+
+.posts-item {
+    height: 130px;
+}
+
+#form-subscribe {
+    grid-area: subscribe;
+    height: 200px;
+}
+
+#best-posts {
+    grid-area: best;
+    height: 260px;
+    padding: 10px 0px;
+}
+
+.best-posts-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.best-posts-item {
+    height: 170px;
+}
+
+.other-posts {
+    grid-area: other;
+}
+
+#contato {
+    grid-area: contato;
+    height: 500px;
+    padding: 10px 0px;
+}
+
+.flex-contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 435px;
+}
+
+.contato-item {
+    height: 190px;
+}
+
+#main-footer {
+    grid-area: footer;
+    height: 80px;
+}
+
+
+/*media queries*/
+
+/*desktop*/
+@media (min-width: 700px) {
+    #grid-wrapper {
+        gap: 20px;
+        grid-template-areas: 
+        "header header header"
+        "dtpr dtpr dtsec"
+        "ultimos ultimos ultimos"
+        "subscribe subscribe subscribe"
+        "best best best"
+        "other other other"
+        "contato contato contato"
+        "footer footer footer";
+    }
+
+    .container-wrapper {
+        width: 80%;
+        margin: auto;
+    }
+    
+    #main-menu {
+        height: 200px;
+    } 
+    
+    #destaq-prin {
+        height: 390px;
+        width: 90%;
+        margin-left: 10%;
+    }
+
+    #destaq-sec {
+        justify-content: space-between;
+        margin: 0px;
+    }
+    
+    .destaq-sec-item{
+        height: 185px;
+    }
+
+    .padrao-posts {
+        padding: 30px 0px;
+    }
+    
+    .titulo-section {
+        height: 50px;
+        margin-bottom: 30px;
+    }
+    
+    .flex-post {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 360px;
+    }
+
+    .posts-item {
+        width: 32%;
+        height: 100%;
+    }
+    
+    #form-subscribe {
+        height: 150px;
+    }
+
+    #best-posts {
+        height: 600px;
+        padding: 30px 0px;
+    }
+    
+    .best-posts-flex {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(4, [col-start] 1fr);
+        grid-template-rows: 220px 220px;
+    }
+    
+    .best-posts-item {
+        height: 220px;
+    }
+
+    #best-item1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    #best-item2 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    #best-item3 {
+        grid-area: 2 / 1 / -1 / 2;
+    }
+
+    #best-item4 {
+        grid-area: 2 / 2 / -1 / 3;
+    }
+
+    #best-item5 {
+        grid-area: 1 / 3 / -1 / -1;
+        height: auto;
+    }
+
+    #contato {
+        padding: 30px 0px;
+    }
+    
+    .flex-contato {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 360px;
+    }
+    
+    .contato-item {
+        height: 100%;
+        width: 49%;
+    }
+    
+    #main-footer {
+        height: 150px;
+    }
+}
