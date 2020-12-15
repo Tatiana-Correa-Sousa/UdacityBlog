@@ -4,108 +4,232 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/home.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Rock+Salt&display=swap" rel="stylesheet">
     <title>Blog</title>
 </head>
 <body>
+    <header id="main-menu">
+        <div class="logo">
+            <img src="img/koalailustraçao2.png" alt="ilustração koala piscando">
+            <h1>Austrália</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="menubutton" href="#">NEWS</a></li>
+                <li><a class="menubutton" href="#">DICAS</a></li>
+                <li><a class="menubutton" href="#">DESTINOS</a></li>
+                <li><a class="menubutton" href="#">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div id="grid-wrapper">
-
-        <header id="main-menu">
-            
-        </header>
-
         <section id="destaq-prin">
-            
+            <div class="texto-destaq">
+                <h3 class="titulo-destaq-prin">Uluru Kata Tijuta Nacional Park</h3>
+                <div class="detalhe-sublinha-titulos"></div>
+                <p class="data-postagem">AGOSTO 2016</p>
+            </div>
         </section>
 
         <section id="destaq-sec" class="container-wrapper">
-            <div class="destaq-sec-item">
-
+            <div class="destaq-sec-item dtsec-prim-item">
+                <div class="texto-destaq">
+                    <h4 class="titulo-destaq-sec">Slip, Slop, Slap - Gold Coast Surf</h4>
+                    <p class="data-postagem">MAIO 2018</p>
+                </div>
             </div>
-            <div class="destaq-sec-item">
-
+            <div class="destaq-sec-item dtsec-segn-item">
+                <div class="texto-destaq">
+                    <h4 class="titulo-destaq-sec">Melbourne, a segunda maior cidade da Austrália</h4>
+                    <p class="data-postagem">FEVEREIRO 2017</p>
+                </div>
             </div>
         </section>
 
         <section class="ultimos-posts padrao-posts container-wrapper">
-            <header class="titulo-section">
-
+            <header>
+                <h2 class="titulo-section">Últimas postagens</h2>
+                <div class="detalhe-sublinha-titulos"></div>
             </header>
             <div class="flex-post">
                 <div class="posts-item">
-
+                    <div class="imagem-post" id="post1"></div>
+                    <div class="texto-post">
+                        <h4 class="titulo-post">Pedras dos 12 Apóstolos - Great Ocean Road</h4>
+                        <article>
+                            Escavadas pela erosão natural durante milhões de anos, essas formações calcárias de 45 metros de altura ...
+                        </article>
+                        <p class="data-postagem data-dark">DEZEMBRO 2020</p>
+                    </div>
                 </div>
                 <div class="posts-item">
-
+                    <div class="imagem-post" id="post2"></div>
+                    <div class="texto-post">
+                        <h4 class="titulo-post">Sydney Opera House</h4>
+                        <article>
+                            A majestosa Casa da Ópera de Sydney é um dos grandes símbolos da Austrália. Foi projetado por Jorn Utzon ...
+                        </article>
+                        <p class="data-postagem data-dark">NOVEMBRO 2020</p>
+                    </div>
                 </div>
                 <div class="posts-item">
-
+                    <div class="imagem-post" id="post3"></div>
+                    <div class="texto-post">
+                        <h4 class="titulo-post">Coala ou Koala (Phascolarctos cinereus)</h4>
+                        <article>
+                            O coala é um mamífero marsupial herbívoro arbóreo nativo da Austrália. seus parentes vivos mais próximos são os vombates ...
+                        </article>
+                        <p class="data-postagem data-dark">NOVEMBRO 2020</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="form-subscribe" class="container-wrapper">
-
+        <section id="form-subscribe">
+            <div class="container-wrapper">
+                <header id="text-form">
+                    Se inscreva e receba as últimas atualizações
+                </header>
+                <form>
+                    <input type="email" id="email" placeholder="joao@gmail.com.br"/><br>
+                    <button type="submit">INSCREVER</button>
+                </form>
+            </div>
         </section>
 
         <section id="best-posts" class="container-wrapper">
-            <header class="titulo-section">
-
+            <header>
+                <h2 class="titulo-section">Mais visualizadas</h2>
+                <div class="detalhe-sublinha-titulos"></div>
             </header>
             <div class="best-posts-flex">
                 <div class="best-posts-item" id="best-item1">
-
+                    <div class="imagem-post-best" id="imagem-best-item1"></div>
+                    <div class="texto-post">
+                        <h4 class="titulo-post titulo-post-best">Canguru - mamífero marsupial</h4>
+                        <p class="data-postagem data-dark">NOVEMBRO 2020</p>
+                    </div>
                 </div>
                 <div class="best-posts-item" id="best-item2">
-
+                    <div class="imagem-post-best" id="imagem-best-item2"></div>
+                    <div class="texto-post">
+                        <h4 class="titulo-post titulo-post-best">Piscina pública em Bondi Beach</h4>
+                        <p class="data-postagem data-dark">AGOSTO 2019</p>
+                    </div>
                 </div>
                 <div class="best-posts-item" id="best-item3">
-
+                    <div class="imagem-post-best" id="imagem-best-item3"></div>
+                    <div class="texto-post">
+                        <h4 class="titulo-post titulo-post-best">Brisbane, capital de Queensland</h4>
+                        <p class="data-postagem data-dark">ABRIL 2018</p>
+                    </div>
                 </div>
                 <div class="best-posts-item" id="best-item4">
-
+                    <div class="imagem-post-best" id="imagem-best-item4"></div>
+                    <div class="texto-post">
+                        <h4 class="titulo-post titulo-post-best">Trabalhando na Austrália - como?</h4>
+                        <p class="data-postagem data-dark">JUNHO 2020</p>
+                    </div>
                 </div>
                 <div class="best-posts-item" id="best-item5">
-
+                    <div class="imagem-post-best" id="imagem-best-item5"></div>
+                    <div class="texto-post">
+                        <h4 class="titulo-post titulo-post-best">A Ponte da Baía de Sydney - Sydney Harbour Bridge</h4>
+                        <article id="resumo-post-best-big">
+                            Um dos ícones da cidade de Sydney, a Harbour Bridge, é uma ponte de aço construída sob a Baía de Sydney e liga as partes sul e norte da cidade. A ponte começou a ser construída em 1924 e demorou 8 anos para ser finalizada ...
+                        </article>
+                        <p class="data-postagem data-dark">NOVEMBRO 2020</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="other-posts padrao-posts container-wrapper">
-            <header class="titulo-section">
-
+            <header>
+                <h2 class="titulo-section">Outras postagens</h2>
+                <div class="detalhe-sublinha-titulos"></div>
             </header>
             <div class="flex-post">
                 <div class="posts-item">
-
+                    <div class="imagem-post" id="outros-post1"></div>
+                    <div class="texto-post">
+                        <h4 class="titulo-post">Adelaide - A capital de South Austrália</h4>
+                        <article>
+                            Adelaide é a capital costeira cosmopolita da Austrália Meridional. Sua região de parques no rio Torrens abriga famosos museus ...
+                        </article>
+                        <p class="data-postagem data-dark">AGOSTO 2020</p>
+                    </div>
                 </div>
                 <div class="posts-item">
-
+                    <div class="imagem-post" id="outros-post2"></div>
+                    <div class="texto-post">
+                        <h4 class="titulo-post">Elizabeth Bay - New South Wales</h4>
+                        <article>
+                            Elizabeth Bay é um subúrbio de harbourside, no leste de Sydney, no estado de New South Wales, Austrália. Está localizada a três quilômetros ...
+                        </article>
+                        <p class="data-postagem data-dark">MARÇO 2019</p>
+                    </div>
                 </div>
                 <div class="posts-item">
-
+                    <div class="imagem-post" id="outros-post3"></div>
+                    <div class="texto-post">
+                        <h4 class="titulo-post">Como são de verdade os australianos</h4>
+                        <article>
+                            Os australianos são pessoas alto astral e ao mesmo tempo reservados. Como comentamos, eles adoram um agito e não abrem mão de aproveitar a vida ...
+                        </article>
+                        <p class="data-postagem data-dark">JANEIRO 2020</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="contato" class="container-wrapper">
-            <header class="titulo-section">
-
-            </header>
-            <div class="flex-contato">
-                <div class="contato-item">
-
-                </div>
-                <div class="contato-item">
-
+        <section id="contato">
+            <div class="container-wrapper">
+                <header class="titulo-section">
+                    <h2 class="titulo-section">Contato</h2>
+                    <div class="detalhe-sublinha-titulos"></div>
+                </header>
+                <div class="flex-contato">
+                    <div class="contato-item" id="contato-endereço">
+                        <p>
+                            (31) 9 6586 3214<br><br>
+                            Brazil - Minas Gerais<br>
+                            Rua Antonio Carlos, 263<br>
+                            Bairro João Batista  -  31563-243
+                        </p>
+                    </div>
+                    <div class="contato-item">
+                        <form>
+                            <div>
+                                <label for="name">Nome</label><br>
+                                <input type="text" id="name" />
+                            </div>
+                            <div>
+                                <label for="mail">E-mail</label><br>
+                                <input type="email" id="mail" />
+                            </div>
+                            <div>
+                                <label for="msg">Mensagem</label><br>
+                                <textarea id="msg"></textarea>
+                            </div>
+                            <div class="button">
+                                <button type="submit">ENVIAR</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
-        
-        <footer id="main-footer">
-
-        </footer>
-    
     </div>
+
+    <footer id="main-footer">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-instagram-square"></i>
+    </footer>
 
 </body>
 </html>
