@@ -42,10 +42,13 @@ nav ul {
     display: flex;
     flex-direction: row;
     font-size: 16px;
-    color: #000000;
     font-weight: 600;
     justify-content: space-evenly;
     margin: 10px 3px;
+}
+
+nav ul li a {
+    color: #000000;
 }
 
 #grid-wrapper {
@@ -243,6 +246,10 @@ textarea {
     height: 80px;
 }
 
+#best-posts {
+    grid-area: best;
+}
+
 .best-posts-flex {
     display: flex;
     flex-direction: column;
@@ -387,6 +394,7 @@ textarea {
     #grid-wrapper {
         gap: 20px;
         margin-top: 115px;
+        grid-template-columns: repeat(3, [col-start] 1fr);
         grid-template-areas: 
         "dtpr dtpr dtsec"
         "ultimos ultimos ultimos"
@@ -402,7 +410,6 @@ textarea {
     
     #destaq-prin {
         height: 390px;
-        width: 95%;
         margin-left: 5%;
     }
 
@@ -441,6 +448,7 @@ textarea {
 
     .data-dark {
         align-self: end;
+        margin-top: 10px;
     }
 
     .posts-item {
@@ -466,8 +474,13 @@ textarea {
     }
 
     #best-posts {
-        height: 600px;
+        height: 100%;
         padding: 10px 0px;
+    }
+
+    .imagem-post-best {
+        width: 100%;
+        height: 218px;
     }
 
     #best-item5 {
@@ -489,10 +502,11 @@ textarea {
     
     .best-posts-item {
         height: 220px;
+        flex-direction: column;
     }
 
     .best-posts-item .texto-post {
-        height: fit-content;
+        height: 100%;
     }
 
     #best-item1 {
