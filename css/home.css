@@ -90,10 +90,24 @@ h3, h4 {
     line-height: 34px; 
 }
 
+.titulo-destaq-prin a {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.85);
+    font-weight: 400;
+}
+
 .titulo-destaq-sec {
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 20px;
+}
+
+.titulo-destaq-sec a {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.85);
+    font-weight: 400;
 }
 
 .detalhe-sublinha-titulos {
