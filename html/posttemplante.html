@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/post.css"/>
+    <link rel="stylesheet" href="../css/post.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,14 +12,14 @@
 <body>
     <header id="main-menu">
         <div class="logo">
-            <img src="img/koalailustraçao2.png" alt="ilustração koala piscando">
+            <img src="../img/koalailustraçao2.png" alt="winking koala illustration">
             <h1>Austrália</h1>
         </div>
         <nav>
             <ul>
-                <li><a class="menubutton" href="index.html">NEWS</a></li>
-                <li><a class="menubutton" href="index.html">DICAS</a></li>
-                <li><a class="menubutton" href="index.html">DESTINOS</a></li>
+                <li><a class="menubutton" href="../index.html">NEWS</a></li>
+                <li><a class="menubutton" href="../index.html">DICAS</a></li>
+                <li><a class="menubutton" href="../index.html">DESTINOS</a></li>
                 <li><a class="menubutton" href="#">CONTATO</a></li>
             </ul>
         </nav>
@@ -30,30 +30,33 @@
             <h2>Título principal do post</h2>
             <p class="subtitle">Breve subtítulo do post</p>
             <div class="author-post">
-                <img id="img-author-post" src="img/avatar.jpg">
+                <img id="img-author-post" src="../img/avatar.jpg">
                 <div id="text-author-post">
-                    <p>Autor, local</p>
-                    <p id="data-postagem">MONTH 0000</p>
+                    <p>Title Author, local</p>
+                    <p>Short Bio Lorem ipsum dolor sit amet</p>
+                    <p id="post-date">MONTH 0000</p>
                 </div>
             </div>
         </section>
 
-        <section id="img-prin">
-            <img src="img/fundoimagem.jpg">
+        <section id="main-image">
+            <img src="../img/fundoimagem.jpg">
+            <figcaption>Fig.1 - Lorem ipsum dolor sit amet.</figcaption>
         </section>
 
-        <section id="post-um" class="container-wrapper">
+        <section id="first-post" class="container-wrapper">
             <article>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique auctor diam, non ornare tellus mollis vitae. In porttitor pulvinar viverra. Pellentesque justo sapien, fringilla sit amet orci eget, dapibus dignissim erat. Aenean euismod eget augue sit amet suscipit. Nam ac bibendum ante. Aenean aliquet fringilla efficitur. Nulla pellentesque urna id diam tristique, non molestie purus consequat. Etiam ligula justo, volutpat id interdum quis, blandit ut ex. Sed vel lacus eget leo cursus porta. Sed elementum sit amet tellus nec dapibus.</p><br>
                 <p>Curabitur mollis dui vel tortor mollis consectetur. Aenean eget justo neque. Phasellus pharetra tincidunt metus, sed pellentesque metus iaculis sit amet. Suspendisse semper nisi nunc, sit amet maximus dui aliquam at. Fusce ultricies ipsum sed ultricies eleifend. Cras non ultricies ligula, eu interdum est. Nam sodales arcu et vestibulum dapibus. Suspendisse at euismod mi, vehicula condimentum sapien. Vestibulum a purus id erat luctus eleifend ut et arcu. Nulla pellentesque, sapien ut tristique rutrum, sapien nibh semper odio, vel pellentesque risus leo nec sem. Mauris pretium pretium blandit.</p>
             </article>
         </section>
 
-        <section id="img-seg">
-            <img src="img/fundoimagem.jpg">
+        <section id="secondary-image">
+            <img src="../img/fundoimagem.jpg">
+            <figcaption>Fig.1 - Lorem ipsum dolor sit amet.</figcaption>
         </section>
 
-        <section id="post-dois" class="container-wrapper">
+        <section id="second-post" class="container-wrapper">
             <article>
                 <p>
                     Nunc sed sagittis risus. Praesent at libero at lectus euismod bibendum. Suspendisse est justo, sollicitudin a mollis a, vehicula eget velit. Sed quis sapien ac mauris interdum pulvinar. Aenean sit amet metus at nisi finibus maximus. Suspendisse volutpat sit amet risus vitae tristique. Quisque vulputate orci sodales velit ullamcorper, ut hendrerit sem sollicitudin. Cras tincidunt placerat augue a malesuada. Donec erat odio, elementum at faucibus non, dignissim nec mi. Proin vulputate viverra sapien, cursus ornare lectus congue eget. Mauris tincidunt condimentum dictum. 
@@ -71,8 +74,8 @@
         <section id="comt">
             <div class="container-wrapper">
                 <header>
-                    <h3 class="titulo-section">O que você achou?</h2>
-                    <div class="detalhe-sublinha-titulos"></div>
+                    <h3 class="section-title">O que você achou?</h2>
+                    <div class="title-underline-detail"></div>
                 </header>
                 <form>
                     <div>
@@ -96,28 +99,28 @@
 
         <section id="other" class="container-wrapper">
             <header>
-                <h3 class="titulo-section">Outras postagens</h2>
-                <div class="detalhe-sublinha-titulos"></div>
+                <h3 class="section-title">Outras postagens</h2>
+                <div class="title-underline-detail"></div>
             </header>
             <div class="other-flex-container-posts">
                 <div class="posts-item post1-flex">
-                    <div class="imagem-post" id="outros-post1"></div>
-                    <div class="texto-post">
-                        <h4 class="titulo-post">Título postagem secundária</h4>
+                    <div class="image-post" id="other-post1"></div>
+                    <div class="text-post">
+                        <h4 class="title-post">Título postagem secundária</h4>
                         <article>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique auctor diam, non ornare tellus mollis vitae. In porttitor pulvinar viverra...
                         </article>
-                        <p class="data-postagem">MONTH 0000</p>
+                        <p class="post-date">MONTH 0000</p>
                     </div>
                 </div>
                 <div class="posts-item post2-flex">
-                    <div class="imagem-post" id="outros-post2"></div>
-                    <div class="texto-post">
-                        <h4 class="titulo-post">Titulo postagem secundária</h4>
+                    <div class="image-post" id="other-post2"></div>
+                    <div class="text-post">
+                        <h4 class="title-post">Titulo postagem secundária</h4>
                         <article>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique auctor diam, non ornare tellus mollis vitae. In porttitor pulvinar viverra...
                         </article>
-                        <p class="data-postagem">MONTH 0000</p>
+                        <p class="post-date">MONTH 0000</p>
                     </div>
                 </div>
             </div>
@@ -127,6 +130,7 @@
             <i class="fab fa-facebook-square"></i>
             <i class="fab fa-linkedin"></i>
             <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-twitter-square"></i>
         </footer>
 
     </div>

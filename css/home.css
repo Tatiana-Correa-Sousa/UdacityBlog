@@ -65,7 +65,7 @@ nav ul li a {
     "contato";
 }
 
-#destaq-prin {
+#main-highlig {
     grid-area: dtpr;
     height: 360px;
     background: url("../img/Uluru.jpg") no-repeat;
@@ -81,42 +81,42 @@ h3, h4 {
     font-weight: 400;
 }
 
-.texto-destaq {
+.highlig-text {
     align-self: end;
 }
 
-.titulo-destaq-prin {
+.main-highlig-title {
     font-size: 28px;
     line-height: 34px; 
 }
 
-.titulo-destaq-prin a {
+.main-highlig-title a {
     text-decoration: none;
     color: #FFFFFF;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.85);
     font-weight: 400;
 }
 
-.titulo-destaq-sec {
+.secondary-highlig-title {
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 20px;
 }
 
-.titulo-destaq-sec a {
+.secondary-highlig-title a {
     text-decoration: none;
     color: #FFFFFF;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.85);
     font-weight: 400;
 }
 
-.detalhe-sublinha-titulos {
+.title-underline-detail {
     border-bottom: 2px solid #FF5C00;
     width: 80px;
     margin: 5px 0 30px;
 }
 
-.data-postagem {
+.post-date {
     color: #FFFFFF;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.85);
     font-weight: 500;
@@ -130,7 +130,7 @@ h3, h4 {
     margin: auto;
 }
 
-#destaq-sec {
+#secondary-highlig {
     grid-area: dtsec;
     height: 355px;
     display: flex;
@@ -138,15 +138,15 @@ h3, h4 {
     justify-content: space-between;
 }
 
-.dtsec-prim-item {
+.sec-high-first-item {
     background: url("../img/surf.jpg") no-repeat;
 }
 
-.dtsec-segn-item {
+.sec-high-second-item {
     background: url("../img/melbourne.jpg") no-repeat;
 }
 
-.destaq-sec-item{
+.secondary-highlig-item {
     height: 170px;
     background-size: cover;
     background-position: center;
@@ -155,18 +155,18 @@ h3, h4 {
     padding: 0 0 10px 10px;
 }
 
-.titulo-section {
+.section-title {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
     color: #000000;
 }
 
-.ultimos-posts {
+.last-posts {
     grid-area: ultimos;
 }
 
-.titulo-post {
+.title-post {
     font-size: 18px;
     line-height: 22px;
     color: #000000;
@@ -181,7 +181,7 @@ article {
     color: #5F5E5E;
 }
 
-.imagem-post {
+.image-post {
     overflow: hidden;
     height: 180px;
 }
@@ -216,7 +216,7 @@ article {
     padding: 5px;
 }
 
-.data-dark{
+.date-dark{
     color: #5F5E5E;
     text-shadow: none;
     margin: 15px 0px 10px 10px;
@@ -256,6 +256,13 @@ button {
     font-weight: 700;
 }
 
+.read-more {
+    color: #FF5C00;
+    background-color: transparent;
+    border: 1px solid #FF5C00;
+}
+
+
 textarea {
     height: 80px;
 }
@@ -280,25 +287,25 @@ textarea {
     height: 100px;
 }
 
-#imagem-best-item1 {
+#image-best-item1 {
     background: url("../img/canguru.jpg") no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-#imagem-best-item2 {
+#image-best-item2 {
     background: url("../img/nadadores.jpg") no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-#imagem-best-item3 {
+#image-best-item3 {
     background: url("../img/brisbane.jpg") no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-#imagem-best-item4 {
+#image-best-item4 {
     background: url("../img/Prédios.jpg") no-repeat;
     background-size: cover;
     background-position: center;
@@ -308,7 +315,7 @@ textarea {
     display: none;
 }
 
-.titulo-post-best {
+.title-post-best {
     margin: 5px 5px;
     font-size: 16px;
 }
@@ -317,44 +324,44 @@ textarea {
     grid-area: other;
 }
 
-#outros-post1 {
+#other-post1 {
     background: url("../img/adelaide.jpg") no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-#outros-post2 {
+#other-post2 {
     background: url("../img/Elizabeth\ bay.jpg") no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-#outros-post3 {
+#other-post3 {
     background: url("../img/pessoas.jpg") no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-#contato {
+#contact {
     grid-area: contato;
     background-color: #E5E5E5;
     padding: 15px 0;
 }
 
-.contato-item {
+.contact-item {
     font-size: 18px;
     line-height: 24px;
     color: #000000;
 }
 
-.flex-contato {
+.flex-contact {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 460px;
 }
 
-.flex-contato input, textarea {
+.flex-contact input, textarea {
     margin: 0 0 10px;
 }
 
@@ -377,12 +384,12 @@ textarea {
 /*tablet*/
 @media (min-width: 600px) {
     
-    #destaq-sec {
+    #secondary-highlig {
         height: 170px;
         flex-direction: row;
     }
 
-    .destaq-sec-item {
+    .secondary-highlig-item {
         width: 48%;
     }
 
@@ -394,11 +401,11 @@ textarea {
         background-position: center;
     }
 
-    .imagem-post-best {
+    .image-post-best {
         width: 50%;
     }
 
-    .data-dark {
+    .date-dark {
         margin-top: 40px;
     }
 }
@@ -422,28 +429,28 @@ textarea {
         height: 115px;
     } 
     
-    #destaq-prin {
+    #main-highlig {
         height: 390px;
         margin-left: 5%;
     }
 
-    #destaq-sec {
+    #secondary-highlig {
         height: 100%;
         flex-direction: column;
         justify-content: space-between;
         margin: 0px;
     }
     
-    .destaq-sec-item{
+    .secondary-highlig-item{
         height: 185px;
         width: 100%;
     }
     
-    .padrao-posts {
+    .template-posts {
         padding: 10px 0px;
     }
     
-    .titulo-section {
+    .section-title {
         height: 35px;
         margin-bottom: 0px;
     }
@@ -455,12 +462,12 @@ textarea {
         height: 430px;
     }
 
-    .texto-post {
+    .text-post {
         display: grid;
         height: 240px;
     }
 
-    .data-dark {
+    .date-dark {
         align-self: end;
         margin-top: 10px;
     }
@@ -470,7 +477,7 @@ textarea {
         height: 100%;
     }
 
-    .titulo-post {
+    .title-post {
         height: 60px;
     }
     
@@ -492,7 +499,7 @@ textarea {
         padding: 10px 0px;
     }
 
-    .imagem-post-best {
+    .image-post-best {
         width: 100%;
         height: 218px;
     }
@@ -501,7 +508,7 @@ textarea {
         display: inherit;
     }
 
-    #imagem-best-item5 {
+    #image-best-item5 {
         background: url("../img/sydneyharbour.jpg") no-repeat;
         background-size: cover;
         background-position: center;
@@ -519,7 +526,7 @@ textarea {
         flex-direction: column;
     }
 
-    .best-posts-item .texto-post {
+    .best-posts-item .text-post {
         height: 100%;
     }
 
@@ -544,23 +551,23 @@ textarea {
         height: auto;
     }
 
-    #contato {
+    #contact {
         padding: 10px 0px;
     }
     
-    .flex-contato {
+    .flex-contact {
         flex-direction: row;
         justify-content: space-between;
         height: 360px;
     }
     
-    .contato-item {
+    .contact-item {
         height: 100%;
         width: 49%;
         display: grid;
     }
     
-    #contato-endereço p {
+    #contact-address p {
         align-self: center;
     }
 
