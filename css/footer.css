@@ -1,0 +1,12 @@
+#main-footer {
+    height: 60px;
+    background-color: #5F5E5E;
+    text-align: center;
+    padding-top: 12.5px;
+}
+
+#main-footer i {
+    font-size: 35px;
+    color: #FFFFFF;
+    margin: 0 10px;
+}
